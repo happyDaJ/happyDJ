@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="bootstrap-4.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Header -->
+    <header class="container-fluid mt-4 text-center " >
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <h1>我的第一个 Bootstrap 4 页面</h1>
+            <p>重置浏览器窗口大小查看效果！</p> 
+          </div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">菜单</a>
+       
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">个人简介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">教育背景</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">兴趣爱好</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#">联系方式</a>
+              </li> 
+          </ul>
+        </div> 
+      </nav>
+ 
+     
+    <!-- 内容区 -->
+    <main class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel" style="background-color: aliceblue; margin-top: 0.5rem;">
+ 
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+           
+            <!-- 轮播图片 -->
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img src="https://static.jyshare.com/images/mix/img_fjords_wide.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="https://static.jyshare.com/images/mix/img_nature_wide.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="https://static.jyshare.com/images/mix/img_mountains_wide.jpg">
+              </div>
+            </div>
+           
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+           
+          </div>
+        <div class="row g-4">
+            <!-- 主内容区 -->
+            <section class="col-lg-8">
+                <div class="card mb-4" id="about">
+                    <div class="card-body">
+                        <h2 class="card-title">个人简介</h2>
+                        <p class="card-text">时间对每个人都公平合理...</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4" id="education">
+                    <div class="card-body">
+                        <h3 class="card-title">教育背景</h3>
+                        <div class="timeline">
+                            <div class="timeline-item border-start ps-3 mb-3">
+                                <h4>初中</h4>
+                                <p>2013-2016 XXXX初中</p>
+                            </div>
+                            <div class="timeline-item border-start ps-3 mb-3">
+                                <h4>大专</h4>
+                                <p>202-2025 .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 侧边栏 -->
+            <aside class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">兴趣爱好</h3>
+                        <ul class="list-unstyled">
+                            <li>📷 摄影</li>
+                            <li>🎧 听歌</li>
+                            <li>✈️ 旅游</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3 mt-4">
+        <div class="container text-center">
+            张三联系方式 11111111
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap JS 及其依赖 -->
+    <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
